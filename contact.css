@@ -1,0 +1,427 @@
+:root {
+    /* Brand */
+    --accent: #ff7a2f;
+    --accent-hover: #ff5c00;
+
+    /* Dark backgrounds */
+    --bg-main: #141414;
+    --bg-section1: #2f2f2f;
+    --bg-card: #3a3a3a;
+    --bg-section2: #222222;
+
+    /* Text */
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --text-muted: #999999;
+
+    /* Borders & lines */
+    --border: #444444;
+
+    /* Shadows */
+    --shadow: rgba(0, 0, 0, 0.5);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    
+    background-size: cover;
+    background-position: center;
+}
+.contact-hero{
+    padding: 50px 0;
+    width: 100%;
+    height: 60vh;
+    background: url(images/contact.jpg) no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero-content{
+   
+    padding: 40px;
+    border-radius: 10px;
+}
+.hero-content h1{
+    color: #fff;
+    font-size: 36px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.hero-content p{
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.divider {
+    width: 50%;
+  height: 8px; /* thickness of the divider */
+  background: repeating-linear-gradient(
+    -45deg,          /* angle of the stripes */
+    #ff6600,        /* stripe color (orange) */
+    #ff6600 6px,    /* length of the colored part */
+    transparent 6px,    /* background color starts */
+    transparent 12px     /* background color ends */
+  );
+ 
+    margin: 20px auto; /* center the divider and add vertical spacing */
+}
+
+.contact-section{
+    padding: 40px;
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--bg-section1)
+}
+.contact-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+  
+    
+}
+.contact-info{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+   
+}
+.contact-info h2{
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.contact-info .line1{
+    display: flex;
+   justify-content: space-between;
+    margin-bottom: 20px;
+
+}
+.contact-info .line2{
+    display: flex;
+    justify-content: space-between;
+}
+.info-box{
+    background-color: var(--bg-card);
+    padding: 20px 13px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    width: 48%;
+    justify-content: space-between;
+}
+.info-box .icon{
+    font-size: 24px;
+    color: var(--accent);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+.info-box .icon i{
+    margin-right: 10px;
+    color: var(--text-primary);
+    background-color: var(--accent);
+    padding: 10px;
+    border-radius: 10px;
+}
+.info-box h3{
+    color: var(--text-primary);
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.info-box p{
+    color: var(--text-secondary);
+    font-size: 16px;
+    line-height: 1.5;
+    margin-left: 50px;
+}
+.contact-info .map{
+    width: 100%;
+    height: 300px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.contact-form{
+    width: 45%;
+    
+    border: 8px solid var(--border);
+    padding: 20px;
+    
+}
+.contact-form h2{
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.contact-form form{
+    display: block;
+
+    
+}
+.contact-form form .form-row{
+    display: flex;
+   justify-content: space-between;
+    margin-bottom: 20px;
+}
+.contact-form form .form-row input{
+    
+    width: 48%;
+    height: 40px;
+    justify-content: space-between;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--bg-card);
+    color: var(--text-primary);
+    flex: 1; /* makes all inputs share equal space */
+    margin-right: 4%; /* optional spacing between inputs */
+}
+.contact-form form .form-row input:last-child {
+    margin-right: 0; /* remove margin from the last input */
+}
+
+ textarea{
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--bg-card);
+    color: var(--text-primary);
+}
+.contact-form form button{
+    background-color: var(--accent);
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 30px;
+}
+
+.contact-form form button:hover{
+    background-color: var(--accent-hover);
+}
+
+.social{
+    display: flex;
+    justify-content: left;
+    margin-top: 40px;
+    align-items: center;
+}
+.social p{
+    color: var(--text-secondary);
+    margin-right: 20px;
+    font-size: 18px;
+}
+.social a{
+    color: var(--text-primary);
+    font-size: 20px;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+.social a i{
+    color: var(--text-primary);
+    background:transparent;
+    padding: 10px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+}
+.social a i:hover{
+    color: var(--accent);
+}
+.faq-section{
+    padding: 40px;
+    background:url(images/faq.jpg) no-repeat;
+    background-size: cover;
+}
+.faq-section h2{
+    color: #fff;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+.faq-section .faq-item{
+    background:transparent;
+    padding: 20px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+.faq-section .faq-item button{
+    background: none;
+    border: none;
+    color: var(--text-primary);
+    font-size: 18px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+.faq-section .faq-item button:hover{
+    color: var(--accent);
+}
+.faq-section .faq-item .faq-answer{
+    margin-top: 10px;
+    color: var(--text-secondary);
+    font-size: 16px;
+    display: none;
+}
+.faq-section .faq-item.active .faq-answer{
+    display: block;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.btn a{
+    background-color: var(--accent);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+.btn a:hover{
+    background-color: var(--accent-hover);
+}
+
+
+/* ==================== CONTACT PAGE RESPONSIVE ==================== */
+
+/* Mobile First (default) */
+.contact-container {
+    flex-direction: column;
+    gap: 30px;
+}
+
+.contact-info,
+.contact-form {
+    width: 100%;
+}
+
+.contact-info .line1,
+.contact-info .line2 {
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-box {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.contact-form form .form-row {
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form form .form-row input {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 100%;
+}
+
+.contact-hero {
+    height: 60vh;
+    padding: 20px;
+}
+
+.hero-content h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.hero-content p {
+    font-size: 14px;
+    text-align: center;
+}
+
+.divider {
+    width: 70%;
+    height: 6px;
+}
+
+/* FAQ Section */
+.faq-section h2 {
+    font-size: 24px;
+    text-align: center;
+}
+
+.faq-section .faq-item {
+    font-size: 16px;
+    padding: 15px;
+}
+
+/* Tablet & Desktop */
+@media (min-width: 825px) {
+    .contact-container {
+        flex-direction: row;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 45%;
+    }
+
+    .contact-info .line1,
+    .contact-info .line2 {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .info-box {
+        width: 48%;
+        margin-bottom: 20px;
+    }
+
+    .contact-form form .form-row {
+        flex-direction: row;
+    }
+
+    .contact-form form .form-row input {
+        width: 48%;
+        margin-right: 4%;
+    }
+
+    .contact-form form .form-row input:last-child {
+        margin-right: 0;
+    }
+
+    .contact-hero {
+        height: 60vh;
+        padding: 40px;
+    }
+
+    .hero-content h1 {
+        font-size: 36px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+    }
+
+    .divider {
+        width: 50%;
+        height: 8px;
+    }
+
+    .faq-section h2 {
+        font-size: 28px;
+    }
+
+    .faq-section .faq-item {
+        font-size: 18px;
+        padding: 20px;
+    }
+}

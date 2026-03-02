@@ -1,0 +1,212 @@
+:root {
+    /* Brand */
+    --accent: #ff7a2f;
+    --accent-hover: #ff5c00;
+
+    /* Dark backgrounds */
+    --bg-main: #141414;
+    --bg-section1: #2f2f2f;
+    --bg-card: #3a3a3a;
+    --bg-section2: #222222;
+
+    /* Text */
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --text-muted: #999999;
+
+    /* Borders & lines */
+    --border: #444444;
+
+    /* Shadows */
+    --shadow: rgba(0, 0, 0, 0.5);
+}
+.hero{
+    height: 80vh;
+    background: url('images/pricinghero.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 0;
+}
+.hero-content h1{
+    color: var(--text-primary);
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.hero-content p{
+    color: var(--text-secondary);
+    font-size: 25px;
+    max-width: 600px;
+}
+.pricing{
+    background-color:var(--bg-section1);
+    padding: 50px 0;
+    text-align: left;
+    
+}
+.price-list{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+.pricing-card{
+    background-color:var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 8px var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}   
+.pricing-card:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px var(--shadow);
+}
+.pricing-card h2{
+    font-size: 28px;
+    margin-bottom: 10px;
+    color:var(--text-primary);
+}
+.pricing-card p{
+    font-size: 16px;
+    color:var(--text-secondary);
+}
+.pricing-card .price{
+    font-size: 32px;
+    font-weight: 700;
+    margin: 20px 0;
+    color:var(--accent);
+}
+.pricing-card .price span{
+    font-size:16px;
+    font-weight:400;
+    color:var(--text-secondary);
+}
+.pricing-card a{
+    display: inline-block;
+    background-color:var(--accent);
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+.pricing-card a:hover{
+    background-color:var(--accent-hover);
+}
+.pricing-card ul{
+    
+    padding: 0;
+    margin-top: 20px;
+    text-align: left;
+}
+ul h3{
+    font-size: 18px;
+    margin-bottom: 10px;
+    color:var(--text-primary);
+}
+li{
+    list-style: circle;
+    list-style-position: inside;
+    margin-bottom: 10px;
+    color:var(--text-secondary);
+}
+.pro{
+    border: 2px solid var(--accent);
+    width: 350px;
+    
+    
+}
+.pro .probadge{
+    background-color:var(--accent);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: 500;
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 768px) {
+    .pricing-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*trusttion*/
+.trusttion{
+    background-color:var(--bg-section2);
+    padding: 50px 0;
+    text-align: center;
+}
+.trusttion h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+    color:var(--text-primary);
+}
+.trust-list{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+.trust-item{
+    background-color:var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 30px;
+    width: 300px;
+    box-shadow: 0 4px 8px var(--shadow);
+}
+.trust-item i{
+    font-size: 40px;
+    color:var(--accent);
+    margin-bottom: 15px;
+}
+.trust-item p{
+    text-transform: capitalize;
+    font-size: 16px;
+    color:var(--text-secondary);
+}
+/*CTA Section*/
+.cta{
+    background: url(images/cta.jpg) no-repeat center center;
+    backdrop-filter: brightness(0.7);
+    background-size: cover;
+    background-position: center;
+    padding: 50px 0;
+    text-align: center;
+}
+.cta h2{
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+.cta p{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+.cta a{
+    display: inline-block;
+    background-color:var(--accent);
+    color:var(--text-primary);
+    padding: 10px 20px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.cta a:hover{
+    background-color:var(--accent-hover);
+    color: #fff;
+}
+
