@@ -23,7 +23,8 @@ It includes multiple pages, blog articles, trainer showcase, and interactive fil
 
 ## 📸 Screenshots
 
-(Add screenshots here)
+<img width="1918" height="452" alt="image" src="https://github.com/user-attachments/assets/e93bc1ff-4014-486f-ab50-e57a09a61092" />
+
 
 ## 🌐 Live Demo
 
