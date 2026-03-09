@@ -1,0 +1,299 @@
+
+:root {
+    /* Brand */
+    --accent: #ff7a2f;
+    --accent-hover: #ff5c00;
+
+    /* Dark backgrounds */
+    --bg-main: #141414;
+    --bg-section1: #2f2f2f;
+    --bg-card: #3a3a3a;
+    --bg-section2: #222222;
+
+    /* Text */
+    --text-primary: #ffffff;
+    --text-secondary: #cccccc;
+    --text-muted: #999999;
+
+    /* Borders & lines */
+    --border: #444444;
+
+    /* Shadows */
+    --shadow: rgba(0, 0, 0, 0.5);
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+scroll-behavior: smooth;
+}
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    line-height: 1.6;
+}
+h1,
+h2,
+h3,h4,h5,
+h6,li{
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-family: 'Inter', sans-serif;
+}
+.hero {
+    padding: 20px;
+    background-color: var(--accent);
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.hero-content {
+    max-width: 700px;
+    background-color: var(--bg-section1);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--shadow);
+    position: absolute;
+    top: 150px;
+
+   
+
+}
+.hero-content h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+}
+.hero-content p {
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+}
+.article-container{
+max-width:1200px;
+margin-top:170px;
+padding:20px;
+margin-left:auto;
+margin-right:auto;
+border-top:1px solid var(--border);
+padding-top:40px;
+}
+
+.article fieldset {
+    border: 1px solid var(--border);
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: var(--bg-card);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px var(--shadow);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width:900px;
+margin-left:auto;
+margin-right:auto;
+
+}
+.article fieldset:hover{
+transform: translateY(-5px);
+box-shadow: 0 10px 20px rgba(0,0,0,0.6);
+}
+.article fieldset legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent);
+}
+.article fieldset h4 {
+    margin-top: 15px;
+    color: var(--text-secondary);
+}
+.article fieldset ol {
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+.article fieldset ol li {
+    margin-bottom: 10px;
+    color: var(--text-muted);
+}
+.meta{
+color: var(--text-muted);
+font-size: 0.9rem;
+margin-bottom: 10px;
+
+}
+.btn{
+    text-align:center;
+margin-top:20px;
+align-items: center;
+justify-content: center;
+}
+
+.back-btn{
+display:inline-block;
+margin-top:30px;
+padding:12px 26px;
+background:var(--accent);
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:500;
+transition:all 0.3s ease;
+}
+
+.back-btn:hover{
+background:var(--accent-hover);
+transform:translateY(-2px);
+box-shadow:0 6px 12px rgba(0,0,0,0.5);
+}
+
+
+/* =========================
+   TABLET (1024px and below)
+   ========================= */
+
+@media (max-width: 1024px){
+
+.hero{
+height:260px;
+}
+
+.hero-content{
+max-width:600px;
+top:130px;
+padding:18px;
+}
+
+.hero-content h1{
+font-size:2.2rem;
+}
+
+.hero-content p{
+font-size:1.05rem;
+}
+
+.article-container{
+max-width:90%;
+margin-top:140px;
+}
+
+.article fieldset{
+padding:18px;
+}
+
+}
+
+
+/* =========================
+   MOBILE (768px and below)
+   ========================= */
+
+@media (max-width: 768px){
+
+.hero{
+height:240px;
+padding:15px;
+}
+
+.hero-content{
+max-width:90%;
+top:120px;
+padding:16px;
+}
+
+.hero-content h1{
+font-size:2rem;
+}
+
+.hero-content p{
+font-size:1rem;
+}
+
+.article-container{
+margin-top:150px;
+padding:15px;
+}
+
+.article fieldset legend{
+font-size:1.3rem;
+}
+
+.article fieldset h4{
+font-size:0.95rem;
+}
+
+.article fieldset ol li{
+font-size:0.9rem;
+}
+
+.back-btn{
+font-size:0.9rem;
+padding:8px 16px;
+}
+
+}
+
+
+/* =========================
+   SMALL MOBILE (480px)
+   ========================= */
+
+@media (max-width:480px){
+
+.hero{
+height:220px;
+}
+
+.hero-content{
+top:110px;
+padding:14px;
+}
+
+.hero-content h1{
+font-size:1.7rem;
+}
+
+.hero-content p{
+font-size:0.9rem;
+}
+
+.article-container{
+margin-top:160px;
+padding:10px;
+}
+
+.article fieldset{
+padding:15px;
+}
+
+.article fieldset legend{
+font-size:1.2rem;
+}
+
+.article fieldset h4{
+font-size:0.9rem;
+}
+
+.article fieldset ol{
+margin-left:15px;
+}
+
+.article fieldset ol li{
+font-size:0.85rem;
+}
+
+.meta{
+font-size:0.8rem;
+}
+
+.back-btn{
+font-size:0.85rem;
+padding:7px 14px;
+}
+
+}
